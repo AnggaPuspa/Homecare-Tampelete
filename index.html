@@ -37,19 +37,57 @@
     <header class="fixed top-0 left-0 right-0 bg-cream/95 backdrop-blur-sm z-50 border-b border-sage/10">
         <nav class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
             <a href="index.html" class="text-2xl font-bold text-sage-dark">Ayur<span class="text-terracotta">Home Care</span></a>
+            
+            <!-- Desktop Menu -->
             <div class="hidden md:flex items-center gap-8">
                 <a href="layanan.html" class="text-gray-600 hover:text-sage-dark transition-colors focus:outline-none focus:ring-2 focus:ring-sage rounded">Layanan</a>
                 <a href="layanan-perawatan-lansia.html" class="text-gray-600 hover:text-sage-dark transition-colors focus:outline-none focus:ring-2 focus:ring-sage rounded">Perawatan Lansia</a>
-                <a href="#harga" class="text-gray-600 hover:text-sage-dark transition-colors focus:outline-none focus:ring-2 focus:ring-sage rounded">Harga</a>
-                <a href="#faq" class="text-gray-600 hover:text-sage-dark transition-colors focus:outline-none focus:ring-2 focus:ring-sage rounded">FAQ</a>
+                <a href="index.html#harga" class="text-gray-600 hover:text-sage-dark transition-colors focus:outline-none focus:ring-2 focus:ring-sage rounded">Harga</a>
+                <a href="index.html#faq" class="text-gray-600 hover:text-sage-dark transition-colors focus:outline-none focus:ring-2 focus:ring-sage rounded">FAQ</a>
             </div>
-            <a href="https://wa.me/62XXXXXXXXXXX?text=Halo,%20saya%20ingin%20konsultasi%20layanan%20home%20care" 
-               class="bg-terracotta hover:bg-terracotta-dark text-white px-5 py-2.5 rounded-full font-medium transition-colors focus:outline-none focus:ring-2 focus:ring-terracotta focus:ring-offset-2"
-               target="_blank" rel="noopener noreferrer">
-                Chat Sekarang
-            </a>
+
+            <div class="flex items-center gap-4">
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-btn" class="md:hidden p-2 text-gray-600 hover:text-sage-dark focus:outline-none focus:ring-2 focus:ring-sage rounded" aria-label="Buka menu" aria-expanded="false">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                    </svg>
+                </button>
+                
+                <a href="https://wa.me/62XXXXXXXXXXX?text=Halo,%20saya%20ingin%20konsultasi%20layanan%20home%20care" 
+                   class="hidden sm:inline-flex bg-terracotta hover:bg-terracotta-dark text-white px-5 py-2.5 rounded-full font-medium transition-colors focus:outline-none focus:ring-2 focus:ring-terracotta focus:ring-offset-2"
+                   target="_blank" rel="noopener noreferrer">
+                    Chat Sekarang
+                </a>
+            </div>
         </nav>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-cream border-t border-sage/10">
+            <div class="px-6 py-4 space-y-3">
+                <a href="layanan.html" class="block text-gray-600 hover:text-sage-dark transition-colors py-2">Layanan</a>
+                <a href="layanan-perawatan-lansia.html" class="block text-gray-600 hover:text-sage-dark transition-colors py-2">Perawatan Lansia</a>
+                <a href="index.html#harga" class="block text-gray-600 hover:text-sage-dark transition-colors py-2">Harga</a>
+                <a href="index.html#faq" class="block text-gray-600 hover:text-sage-dark transition-colors py-2">FAQ</a>
+                <a href="https://wa.me/62XXXXXXXXXXX?text=Halo,%20saya%20ingin%20konsultasi%20layanan%20home%20care" 
+                   class="block bg-terracotta hover:bg-terracotta-dark text-white px-5 py-3 rounded-xl font-medium text-center transition-colors mt-4"
+                   target="_blank" rel="noopener noreferrer">
+                    Chat WhatsApp
+                </a>
+            </div>
+        </div>
     </header>
+
+    <script>
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        mobileMenuBtn.addEventListener('click', () => {
+            const isOpen = !mobileMenu.classList.contains('hidden');
+            mobileMenu.classList.toggle('hidden');
+            mobileMenuBtn.setAttribute('aria-expanded', !isOpen);
+        });
+    </script>
 
     <main>
         <!-- Hero Section - Asymmetric Split -->
