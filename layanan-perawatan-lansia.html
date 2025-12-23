@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perawatan Lansia di Rumah - Ayur Home Care</title>
+    <meta name="description" content="Layanan perawatan lansia profesional di rumah. Perawat ber-STR, pendampingan 24 jam, monitoring kesehatan harian. Biar keluarga tetap tenang.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        sage: '#8DA399',
+                        cream: '#F9F7F2',
+                        terracotta: '#E07A5F',
+                        'sage-dark': '#6B8577',
+                        'terracotta-dark': '#C4644A'
+                    },
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'system-ui', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        html { scroll-behavior: smooth; }
+    </style>
+</head>
+<body class="bg-cream text-gray-800 antialiased">
+
+    <!-- Header (sama dengan homepage) -->
+    <header class="fixed top-0 left-0 right-0 bg-cream/95 backdrop-blur-sm z-50 border-b border-sage/10">
+        <nav class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+            <a href="index.html" class="text-2xl font-bold text-sage-dark">Ayur<span class="text-terracotta">Home Care</span></a>
+            <div class="hidden md:flex items-center gap-8">
+                <a href="index.html#layanan" class="text-gray-600 hover:text-sage-dark transition-colors focus:outline-none focus:ring-2 focus:ring-sage rounded">Layanan</a>
+                <a href="index.html#cara-kerja" class="text-gray-600 hover:text-sage-dark transition-colors focus:outline-none focus:ring-2 focus:ring-sage rounded">Cara Kerja</a>
+                <a href="index.html#harga" class="text-gray-600 hover:text-sage-dark transition-colors focus:outline-none focus:ring-2 focus:ring-sage rounded">Harga</a>
+                <a href="index.html#faq" class="text-gray-600 hover:text-sage-dark transition-colors focus:outline-none focus:ring-2 focus:ring-sage rounded">FAQ</a>
+            </div>
+            <a href="https://wa.me/62XXXXXXXXXXX?text=Halo,%20saya%20ingin%20konsultasi%20layanan%20perawatan%20lansia" 
+               class="bg-terracotta hover:bg-terracotta-dark text-white px-5 py-2.5 rounded-full font-medium transition-colors focus:outline-none focus:ring-2 focus:ring-terracotta focus:ring-offset-2"
+               target="_blank" rel="noopener noreferrer">
+                Chat Sekarang
+            </a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Breadcrumb + Hero -->
+        <section class="pt-28 pb-12 md:pt-32 md:pb-16">
+            <div class="max-w-6xl mx-auto px-6">
+                <!-- Breadcrumb -->
+                <nav class="mb-8" aria-label="Breadcrumb">
+                    <ol class="flex items-center gap-2 text-sm text-gray-500">
+                        <li><a href="index.html" class="hover:text-sage-dark transition-colors focus:outline-none focus:ring-2 focus:ring-sage rounded">Home</a></li>
+                        <li><span class="mx-1">/</span></li>
+                        <li><a href="index.html#layanan" class="hover:text-sage-dark transition-colors focus:outline-none focus:ring-2 focus:ring-sage rounded">Layanan</a></li>
+                        <li><span class="mx-1">/</span></li>
+                        <li class="text-gray-900 font-medium">Perawatan Lansia</li>
+                    </ol>
+                </nav>
+
+                <!-- Hero - Asymmetric -->
+                <div class="grid md:grid-cols-12 gap-8 md:gap-12 items-start">
+                    <div class="md:col-span-7 space-y-6">
+                        <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 leading-tight">
+                            Perawatan Lansia di Rumah
+                        </h1>
+                        <p class="text-lg text-gray-600">
+                            Biar keluarga bisa tetap kerja, tapi tetap tenang soal kondisi orang tua di rumah. 
+                            Perawat kami bantu dari hal kecil seperti ingatkan minum obat, sampai pendampingan penuh 24 jam.
+                        </p>
+                        <div class="flex flex-col sm:flex-row gap-4 pt-2">
+                            <a href="https://wa.me/62XXXXXXXXXXX?text=Halo,%20saya%20ingin%20konsultasi%20perawatan%20lansia%20untuk%20orang%20tua%20saya" 
+                               class="inline-flex items-center justify-center bg-terracotta hover:bg-terracotta-dark text-white px-6 py-3 rounded-xl font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-terracotta focus:ring-offset-2"
+                               target="_blank" rel="noopener noreferrer">
+                                <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+                                </svg>
+                                Cerita Kondisi Orang Tua
+                            </a>
+                        </div>
+                        <p class="text-sm text-gray-500">Boleh cerita dulu aja, nggak harus langsung booking.</p>
+                    </div>
+                    <div class="md:col-span-5">
+                        <div class="bg-sage/20 rounded-3xl aspect-[4/3] overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1576765608535-5f04d1e3f289?w=600&h=450&fit=crop&crop=faces" 
+                                 alt="Foto perawat mendampingi lansia di ruang keluarga (foto asli tim)" 
+                                 class="w-full h-full object-cover">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Apa yang Perawat Lakukan - Asymmetric Layout -->
+        <section class="py-16">
+            <div class="max-w-6xl mx-auto px-6">
+                <div class="grid md:grid-cols-12 gap-8 items-start">
+                    <div class="md:col-span-5">
+                        <p class="text-sage-dark font-medium mb-2">Yang Perawat Kami Lakukan</p>
+                        <h2 class="text-2xl md:text-3xl font-bold text-gray-900 mb-4">Bukan Cuma Jaga, Tapi Benar-Benar Merawat</h2>
+                        <p class="text-gray-600 mb-6">
+                            Kami paham, cari orang yang bisa dipercaya untuk jaga orang tua itu susah. 
+                            Makanya perawat kami bukan sekadar "ada di rumah", tapi aktif memastikan kesehatan dan kenyamanan.
+                        </p>
+                        <p class="text-sm text-gray-500 bg-sage/10 p-4 rounded-xl">
+                            <strong class="text-gray-700">Catatan jujur:</strong> Kalau kondisi sudah darurat (sesak napas berat, tidak sadar, dll), kami tetap sarankan ke IGD dulu. Perawat kami bisa dampingi ke RS kalau diperlukan.
+                        </p>
+                    </div>
+                    <div class="md:col-span-7 space-y-4">
+                        <div class="bg-white p-5 rounded-2xl border border-gray-100">
+                            <h3 class="font-semibold text-gray-900 mb-2">Aktivitas Harian</h3>
+                            <p class="text-gray-600 text-sm">Bantu mandi, ganti baju, makan, dan mobilitas. Termasuk hal-hal kecil yang sering terlewat: potong kuku, sisir rambut, ajak ngobrol biar nggak kesepian.</p>
+                        </div>
+                        <div class="bg-white p-5 rounded-2xl border border-gray-100">
+                            <h3 class="font-semibold text-gray-900 mb-2">Monitoring Kesehatan</h3>
+                            <p class="text-gray-600 text-sm">Cek tekanan darah, gula darah, suhu badan secara rutin. Catat semua di laporan harian yang dikirim ke keluarga via WhatsApp.</p>
+                        </div>
+                        <div class="bg-white p-5 rounded-2xl border border-gray-100">
+                            <h3 class="font-semibold text-gray-900 mb-2">Manajemen Obat</h3>
+                            <p class="text-gray-600 text-sm">Ingatkan dan pastikan obat diminum tepat waktu. Kalau ada banyak obat, kami bantu atur jadwalnya biar nggak bingung.</p>
+                        </div>
+                        <div class="flex gap-4">
+                            <div class="flex-1 bg-white p-5 rounded-2xl border border-gray-100">
+                                <h3 class="font-semibold text-gray-900 mb-2">Pencegahan Jatuh</h3>
+                                <p class="text-gray-600 text-sm">Dampingi saat ke kamar mandi, bangun dari tempat tidur, atau jalan-jalan di rumah.</p>
+                            </div>
+                            <div class="flex-1 bg-white p-5 rounded-2xl border border-gray-100">
+                                <h3 class="font-semibold text-gray-900 mb-2">Laporan ke Keluarga</h3>
+                                <p class="text-gray-600 text-sm">Update harian lengkap dengan foto. Anda tahu persis kondisi orang tua meski sedang di kantor.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Strip Section - Break Rhythm -->
+        <section class="py-10 bg-sage/10">
+            <div class="max-w-6xl mx-auto px-6">
+                <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-6">
+                    <div>
+                        <p class="text-sage-dark font-semibold mb-1">Semua perawat lansia kami:</p>
+                        <p class="text-gray-600 text-sm">STR aktif • Pengalaman min. 3 tahun geriatri • Lolos background check • Training bulanan</p>
+                    </div>
+                    <div class="flex items-center gap-4 text-sm">
+                        <div class="text-center">
+                            <p class="text-2xl font-bold text-sage-dark">200+</p>
+                            <p class="text-gray-500">Lansia dirawat</p>
+                        </div>
+                        <div class="w-px h-10 bg-sage/30"></div>
+                        <div class="text-center">
+                            <p class="text-2xl font-bold text-sage-dark">4.9</p>
+                            <p class="text-gray-500">Rating keluarga</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Untuk Siapa Section -->
+        <section class="py-16">
+            <div class="max-w-6xl mx-auto px-6">
+                <div class="max-w-2xl mb-10">
+                    <p class="text-sage-dark font-medium mb-2">Untuk Siapa Layanan Ini Cocok?</p>
+                    <h2 class="text-2xl md:text-3xl font-bold text-gray-900 mb-4">Mungkin Anda Sedang di Situasi Seperti Ini</h2>
+                </div>
+
+                <div class="grid md:grid-cols-2 gap-6 mb-10">
+                    <div class="space-y-4">
+                        <div class="flex gap-4 items-start">
+                            <div class="w-8 h-8 bg-sage/20 rounded-lg flex items-center justify-center flex-shrink-0 mt-1">
+                                <svg class="w-4 h-4 text-sage-dark" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                            </div>
+                            <div>
+                                <p class="text-gray-900 font-medium">Orang tua mulai sering lupa</p>
+                                <p class="text-gray-600 text-sm">Lupa makan, lupa minum obat, atau mulai bingung dengan hal-hal sederhana. Butuh ada yang ingatkan dan dampingi.</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-4 items-start">
+                            <div class="w-8 h-8 bg-sage/20 rounded-lg flex items-center justify-center flex-shrink-0 mt-1">
+                                <svg class="w-4 h-4 text-sage-dark" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                            </div>
+                            <div>
+                                <p class="text-gray-900 font-medium">Khawatir jatuh di kamar mandi</p>
+                                <p class="text-gray-600 text-sm">Lantai licin, kaki sudah tidak sekuat dulu. Butuh ada yang standby saat mandi atau ke toilet malam.</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-4 items-start">
+                            <div class="w-8 h-8 bg-sage/20 rounded-lg flex items-center justify-center flex-shrink-0 mt-1">
+                                <svg class="w-4 h-4 text-sage-dark" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                            </div>
+                            <div>
+                                <p class="text-gray-900 font-medium">Jam mandi yang sering molor</p>
+                                <p class="text-gray-600 text-sm">Orang tua susah diajak mandi atau ganti baju. Butuh orang yang sabar dan punya cara pendekatan yang tepat.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="space-y-4">
+                        <div class="flex gap-4 items-start">
+                            <div class="w-8 h-8 bg-sage/20 rounded-lg flex items-center justify-center flex-shrink-0 mt-1">
+                                <svg class="w-4 h-4 text-sage-dark" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                            </div>
+                            <div>
+                                <p class="text-gray-900 font-medium">Anak-anak sibuk kerja</p>
+                                <p class="text-gray-600 text-sm">Nggak bisa WFH terus, tapi nggak tenang juga ninggalin orang tua sendirian seharian.</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-4 items-start">
+                            <div class="w-8 h-8 bg-sage/20 rounded-lg flex items-center justify-center flex-shrink-0 mt-1">
+                                <svg class="w-4 h-4 text-sage-dark" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                            </div>
+                            <div>
+                                <p class="text-gray-900 font-medium">Pasca stroke atau sakit berat</p>
+                                <p class="text-gray-600 text-sm">Butuh bantuan lebih intensif: latihan gerak, makan via selang, atau perawatan luka tirah baring.</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-4 items-start">
+                            <div class="w-8 h-8 bg-sage/20 rounded-lg flex items-center justify-center flex-shrink-0 mt-1">
+                                <svg class="w-4 h-4 text-sage-dark" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                            </div>
+                            <div>
+                                <p class="text-gray-900 font-medium">Demensia atau Alzheimer</p>
+                                <p class="text-gray-600 text-sm">Perawat kami terlatih menghadapi pasien yang mudah bingung, gelisah, atau mood swing.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CTA after "Untuk Siapa" -->
+                <div class="bg-white p-6 rounded-2xl border border-gray-100 flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+                    <div>
+                        <p class="font-semibold text-gray-900">Kondisi orang tua Anda mirip salah satu di atas?</p>
+                        <p class="text-gray-600 text-sm">Ceritakan lebih detail, kami jelaskan pelan-pelan apa yang realistis buat kondisi sekarang.</p>
+                    </div>
+                    <a href="https://wa.me/62XXXXXXXXXXX?text=Halo,%20kondisi%20orang%20tua%20saya%20..." 
+                       class="inline-flex items-center justify-center bg-terracotta hover:bg-terracotta-dark text-white px-6 py-3 rounded-xl font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-terracotta focus:ring-offset-2 whitespace-nowrap"
+                       target="_blank" rel="noopener noreferrer">
+                        Chat Sekarang
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimoni - Simple List, Not Slider -->
+        <section class="py-16 bg-white">
+            <div class="max-w-6xl mx-auto px-6">
+                <div class="max-w-2xl mb-10">
+                    <p class="text-sage-dark font-medium mb-2">Dari Keluarga Lain</p>
+                    <h2 class="text-2xl md:text-3xl font-bold text-gray-900">Yang Sudah Pakai Layanan Ini</h2>
+                </div>
+
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div class="bg-cream p-6 rounded-2xl">
+                        <p class="text-gray-600 mb-4">"Mama saya stroke dan butuh perawatan 24 jam. Yang paling saya suka, perawatnya kasih laporan harian lengkap dengan foto. Jadi saya yang kerja di luar kota tetap tenang."</p>
+                        <div class="flex items-center gap-3">
+                            <div class="w-10 h-10 bg-sage/30 rounded-full"></div>
+                            <div>
+                                <p class="font-medium text-gray-900">Rina W.</p>
+                                <p class="text-sm text-gray-500">Jakarta Selatan • 8 bulan</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-cream p-6 rounded-2xl">
+                        <p class="text-gray-600 mb-4">"Awalnya bapak nggak mau dirawat orang lain. Tapi perawat dari Ayur Home Care sabar banget pendekatannya. Sekarang malah akrab, sering ngobrol bareng."</p>
+                        <div class="flex items-center gap-3">
+                            <div class="w-10 h-10 bg-sage/30 rounded-full"></div>
+                            <div>
+                                <p class="font-medium text-gray-900">Dewi A.</p>
+                                <p class="text-sm text-gray-500">Depok • 1 tahun</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Harga Section -->
+        <section class="py-16">
+            <div class="max-w-6xl mx-auto px-6">
+                <div class="grid md:grid-cols-12 gap-8 items-start">
+                    <div class="md:col-span-5">
+                        <p class="text-sage-dark font-medium mb-2">Estimasi Biaya</p>
+                        <h2 class="text-2xl md:text-3xl font-bold text-gray-900 mb-4">Transparan dari Awal</h2>
+                        <p class="text-gray-600 mb-4">
+                            Harga final tergantung kondisi pasien dan durasi. Tapi ini gambaran kasarnya biar Anda bisa siap-siap.
+                        </p>
+                        <p class="text-sm text-gray-500">
+                            Harga sudah termasuk: gaji perawat, koordinasi tim, laporan harian, dan support 24/7 dari kami.
+                        </p>
+                    </div>
+                    <div class="md:col-span-7 space-y-4">
+                        <div class="bg-white p-5 rounded-2xl border border-gray-100 flex justify-between items-center">
+                            <div>
+                                <p class="font-semibold text-gray-900">Harian (12 jam)</p>
+                                <p class="text-sm text-gray-500">Shift pagi atau malam</p>
+                            </div>
+                            <div class="text-right">
+                                <p class="text-sm text-gray-500">Mulai dari</p>
+                                <p class="text-xl font-bold text-gray-900">Rp 450.000<span class="text-sm font-normal text-gray-500">/hari</span></p>
+                            </div>
+                        </div>
+                        <div class="bg-sage text-white p-5 rounded-2xl flex justify-between items-center">
+                            <div>
+                                <p class="font-semibold">Live-in (24 jam)</p>
+                                <p class="text-sm text-white/70">Perawat tinggal di rumah</p>
+                            </div>
+                            <div class="text-right">
+                                <p class="text-sm text-white/70">Mulai dari</p>
+                                <p class="text-xl font-bold">Rp 8.500.000<span class="text-sm font-normal text-white/70">/bulan</span></p>
+                            </div>
+                        </div>
+                        <p class="text-sm text-gray-500">*Assessment awal gratis. Tidak ada biaya tersembunyi.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Singkat -->
+        <section class="py-16 bg-white">
+            <div class="max-w-3xl mx-auto px-6">
+                <div class="text-center mb-10">
+                    <h2 class="text-2xl md:text-3xl font-bold text-gray-900">Pertanyaan Umum</h2>
+                </div>
+
+                <div class="space-y-4">
+                    <details class="bg-cream rounded-xl p-5 group">
+                        <summary class="flex justify-between items-center cursor-pointer list-none font-medium text-gray-900 focus:outline-none focus:ring-2 focus:ring-sage rounded">
+                            Bagaimana kalau orang tua saya susah diajak kerja sama?
+                            <svg class="w-5 h-5 text-sage-dark transform group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                        </summary>
+                        <p class="mt-3 text-gray-600 text-sm">Kami paham, banyak lansia yang awalnya menolak dirawat orang lain. Perawat kami dilatih untuk pendekatan pelan-pelan, membangun kepercayaan dulu. Biasanya dalam 1-2 minggu sudah mulai nyaman. Kalau memang tidak cocok, kami carikan pengganti.</p>
+                    </details>
+
+                    <details class="bg-cream rounded-xl p-5 group">
+                        <summary class="flex justify-between items-center cursor-pointer list-none font-medium text-gray-900 focus:outline-none focus:ring-2 focus:ring-sage rounded">
+                            Perawat bisa handle pasien demensia?
+                            <svg class="w-5 h-5 text-sage-dark transform group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                        </summary>
+                        <p class="mt-3 text-gray-600 text-sm">Bisa. Kami punya perawat yang khusus terlatih menangani demensia dan Alzheimer. Mereka paham cara komunikasi yang tepat, menghadapi mood swing, dan menjaga keamanan pasien yang sering bingung atau wandering.</p>
+                    </details>
+
+                    <details class="bg-cream rounded-xl p-5 group">
+                        <summary class="flex justify-between items-center cursor-pointer list-none font-medium text-gray-900 focus:outline-none focus:ring-2 focus:ring-sage rounded">
+                            Kalau perawat sakit atau cuti bagaimana?
+                            <svg class="w-5 h-5 text-sage-dark transform group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                        </summary>
+                        <p class="mt-3 text-gray-600 text-sm">Kami selalu siapkan backup perawat dengan kualifikasi setara. Untuk paket live-in, perawat dapat libur 4 hari/bulan dan kami kirim pengganti. Anda tidak perlu repot cari sendiri.</p>
+                    </details>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Penutup -->
+        <section class="py-16">
+            <div class="max-w-4xl mx-auto px-6">
+                <div class="bg-sage rounded-3xl p-8 md:p-10 text-center text-white">
+                    <h2 class="text-2xl md:text-3xl font-bold mb-3">Mau Diskusi Dulu?</h2>
+                    <p class="text-white/80 mb-6 max-w-xl mx-auto">Ceritakan kondisi orang tua Anda. Kami bantu jelaskan opsi yang realistis, tanpa pressure untuk langsung booking.</p>
+                    <a href="https://wa.me/62XXXXXXXXXXX?text=Halo,%20saya%20mau%20konsultasi%20soal%20perawatan%20lansia%20untuk%20orang%20tua%20saya" 
+                       class="inline-flex items-center justify-center bg-white text-sage-dark hover:bg-cream px-8 py-4 rounded-xl font-semibold text-lg transition-colors focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-sage"
+                       target="_blank" rel="noopener noreferrer">
+                        <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+                        </svg>
+                        Chat via WhatsApp
+                    </a>
+                    <p class="text-sm text-white/60 mt-4">Kalau masih bingung, kirim voice note juga nggak apa-apa.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer (sama dengan homepage) -->
+    <footer class="bg-gray-900 text-gray-400 py-12">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                <div class="md:col-span-2">
+                    <a href="index.html" class="text-2xl font-bold text-white mb-4 block">Ayur<span class="text-terracotta">Home Care</span></a>
+                    <p class="text-sm mb-4 max-w-md">Layanan home care profesional dengan perawat bersertifikat. Kami percaya setiap orang berhak mendapat perawatan berkualitas di rumah sendiri.</p>
+                    <div class="flex gap-4">
+                        <a href="#" class="hover:text-white transition-colors focus:outline-none focus:ring-2 focus:ring-sage rounded" aria-label="Instagram Ayur Home Care">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z" clip-rule="evenodd"/></svg>
+                        </a>
+                        <a href="#" class="hover:text-white transition-colors focus:outline-none focus:ring-2 focus:ring-sage rounded" aria-label="Facebook Ayur Home Care">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd"/></svg>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="text-white font-semibold mb-4">Layanan</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="layanan-perawatan-lansia.html" class="hover:text-white transition-colors focus:outline-none focus:ring-2 focus:ring-sage rounded">Perawatan Lansia</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors focus:outline-none focus:ring-2 focus:ring-sage rounded">Pasca Operasi</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors focus:outline-none focus:ring-2 focus:ring-sage rounded">Pendampingan Medis</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors focus:outline-none focus:ring-2 focus:ring-sage rounded">Perawatan Paliatif</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-semibold mb-4">Perusahaan</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#" class="hover:text-white transition-colors focus:outline-none focus:ring-2 focus:ring-sage rounded">Tentang Kami</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors focus:outline-none focus:ring-2 focus:ring-sage rounded">Karir Perawat</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors focus:outline-none focus:ring-2 focus:ring-sage rounded">Blog Kesehatan</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors focus:outline-none focus:ring-2 focus:ring-sage rounded">Hubungi Kami</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+                <p class="text-sm">&copy; 2024 RumahSehat. Hak cipta dilindungi.</p>
+                <div class="flex gap-6 text-sm">
+                    <a href="#" class="hover:text-white transition-colors focus:outline-none focus:ring-2 focus:ring-sage rounded">Kebijakan Privasi</a>
+                    <a href="#" class="hover:text-white transition-colors focus:outline-none focus:ring-2 focus:ring-sage rounded">Syarat & Ketentuan</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/62XXXXXXXXXXX?text=Halo,%20saya%20ingin%20konsultasi%20layanan%20perawatan%20lansia" 
+       class="fixed bottom-6 right-6 bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-lg transition-all hover:scale-110 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2 z-50"
+       target="_blank" 
+       rel="noopener noreferrer"
+       aria-label="Chat via WhatsApp">
+        <svg class="w-7 h-7" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+        </svg>
+    </a>
+
+</body>
+</html>
